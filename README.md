@@ -13,7 +13,7 @@
 
 
 [![NPM](https://img.shields.io/npm/v/@acrool/node-docker-cli.svg?style=for-the-badge)](https://www.npmjs.com/package/@acrool/node-docker-cli)
-[![npm](https://img.shields.io/bundlejs/size/@acrool/node-docker-cli?style=for-the-badge)](https://github.com/@acrool/node-docker-cli/blob/main/LICENSE)
+[![npm](https://img.shields.io/bundlejs/size/@acrool/node-docker-cli?style=for-the-badge)](https://github.com/acrool/node-docker-cli/blob/main/LICENSE)
 [![npm](https://img.shields.io/npm/l/@acrool/node-docker-cli?style=for-the-badge)](https://github.com/acrool/node-docker-cli/blob/main/LICENSE)
 
 [![npm downloads](https://img.shields.io/npm/dm/@acrool/node-docker-cli.svg?style=for-the-badge)](https://www.npmjs.com/package/@acrool/node-docker-cli)
