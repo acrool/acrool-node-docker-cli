@@ -1,6 +1,6 @@
 import logger from '@acrool/js-logger';
 
-import {defaultConfig} from '../../config.js';
+import {defaultConfig} from '../../setting.js';
 import {bash, renameDockerImage} from '../../utils.js';
 import {IRemoveArgs} from './types.js';
 

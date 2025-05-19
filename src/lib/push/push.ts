@@ -1,7 +1,7 @@
 import logger from '@acrool/js-logger';
 import prompts from 'prompts';
 
-import {defaultConfig} from '../../config.js';
+import {defaultConfig} from '../../setting.js';
 import {bash, renameDockerImage} from '../../utils.js';
 import {main as removeDocker} from '../remove/index.js';
 import {IPushArgs} from './types.js';

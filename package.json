@@ -18,11 +18,12 @@
     "acrool-node-docker-cli": "dist/bin/cli.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "config"
   ],
   "engines": {
     "npm": ">=6",
-    "node": ">=18.20.0"
+    "node": ">=20"
   },
   "scripts": {
     "build": "run-s build:claer && tsc --project ./tsconfig.build.json && run-s copy-dts && run-s chmodBin",

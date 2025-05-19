@@ -1,7 +1,7 @@
 import logger from '@acrool/js-logger';
 import prompts from 'prompts';
 
-import {defaultConfig} from '../../config.js';
+import {defaultConfig} from '../../setting.js';
 import {bash} from '../../utils.js';
 import {main as pushDocker} from '../push/index.js';
 import {IBuildArgs} from './types.js';
