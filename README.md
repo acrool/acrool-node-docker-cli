@@ -1,18 +1,32 @@
-# bear-node-docker
+# Acrool Node Docker CLI
 
-> Common tools build docker image for node project development
 
-[![NPM](https://img.shields.io/npm/v/bear-node-docker.svg)](https://www.npmjs.com/package/bear-node-docker)
-[![npm](https://img.shields.io/npm/dm/bear-node-docker.svg)](https://www.npmjs.com/package/bear-node-docker)
+<a href="https://github.com/acrool/acrool-node-docker-cli" title="Acrool Node Docker CLI - docker build/push/remove for Nodejs">
+    <img src="https://raw.githubusercontent.com/acrool/acrool-node-docker-cli/main/public/og.png" alt="Acrool Node Docker CLI Logo"/>
+</a>
+
+<p align="center">
+   docker build/push/remove for Nodejs
+</p>
+
+<div align="center">
+
+
+[![NPM](https://img.shields.io/npm/v/@acrool/node-docker-cli.svg?style=for-the-badge)](https://www.npmjs.com/package/@acrool/node-docker-cli)
+[![npm](https://img.shields.io/bundlejs/size/@acrool/node-docker-cli?style=for-the-badge)](https://github.com/acrool/@acrool/node-docker-cli/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/l/@acrool/node-docker-cli?style=for-the-badge)](https://github.com/acrool/node-docker-cli/blob/main/LICENSE)
+
+[![npm downloads](https://img.shields.io/npm/dm/@acrool/node-docker-cli.svg?style=for-the-badge)](https://www.npmjs.com/package/@acrool/node-docker-cli)
+[![npm](https://img.shields.io/npm/dt/@acrool/node-docker-cli.svg?style=for-the-badge)](https://www.npmjs.com/package/@acrool/node-docker-cli)
+
+</div>
 
 
 ## Install
 
 ```bash
-yarn add -D bear-node-docker
+yarn add -D @acrool/node-docker-cli
 ```
-
-
 
 ## Setting
 
@@ -25,13 +39,13 @@ in your package.json
 {
    "dockerRegistry": "docker.io/imagine10255",
    "scripts": {
-     "docker:build": "bear-node-docker docker --dockerfile=./node_modules/bear-node-docker/config/dockerfile/react/Dockerfile",
-     "docker:push": "bear-node-docker push"
+     "docker:build": "acrool-node-docker-cli docker --dockerfile=./node_modules/bear-node-docker/config/dockerfile/react/Dockerfile",
+     "docker:push": "acrool-node-docker-cli push"
    }
 }
 ```
 
-imagine10255 is your dockerhub account
+imagine10255 is your dockerhub account, your can change your dockerhub account
 
 
 
@@ -116,4 +130,5 @@ ts-node lib/build-docker/node-run.ts
 
 ## License
 
-MIT © [imagine10255](https://github.com/imagine10255)
+MIT © [Acrool](https://github.com/acrool) & [Imagine](https://github.com/imagine10255)
+

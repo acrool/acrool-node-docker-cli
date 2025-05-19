@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
     "outDir": "dist",
-    "target": "es6",
-    "module": "commonjs",
+    "module": "es2020",
+    "target": "es2020",
+    "moduleResolution": "node",
+    "declaration": true,
     "strict": true,
     "sourceMap": true,
     "esModuleInterop": true,
-    "resolveJsonModule": false
+    "resolveJsonModule": false,
+    "rootDir": "src"
   },
-  "include": ["lib"],
-  "exclude": ["node_modules", "dist", "example"]
+  "include": [
+    "src"
+  ],
+  "exclude": ["node_modules", "dist", "public"]
 }
