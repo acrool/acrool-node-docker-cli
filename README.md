@@ -31,7 +31,7 @@ yarn add -D @acrool/node-docker-cli
 ## Setting
 
 ```bash
-$ cp ./node_modules/bear-node-docker/config/nginx ./deploy/nginx
+$ cp ./node_modules/@acrool/node-docker-cli/config/nginx ./deploy/nginx
 ```
 
 in your package.json
@@ -39,7 +39,7 @@ in your package.json
 {
    "dockerRegistry": "docker.io/imagine10255",
    "scripts": {
-     "docker:build": "acrool-node-docker-cli docker --dockerfile=./node_modules/bear-node-docker/config/dockerfile/react/Dockerfile",
+     "docker:build": "acrool-node-docker-cli build --dockerfile=./node_modules/@acrool/node-docker-cli/config/dockerfile/react/Dockerfile",
      "docker:push": "acrool-node-docker-cli push"
    }
 }
@@ -52,17 +52,17 @@ imagine10255 is your dockerhub account, your can change your dockerhub account
 ### [Options] Custom dockerfile in root type command
 ```bash
 # react
-$ cp ./node_modules/bear-node-docker/config/dockerfile/react/Dockerfile ./
+$ cp ./node_modules/@acrool/node-docker-cli/config/dockerfile/react/Dockerfile ./
 
 # nest 
-$ cp ./node_modules/bear-node-docker/config/dockerfile/nest/Dockerfile ./ 
+$ cp ./node_modules/@acrool/node-docker-cli/config/dockerfile/nest/Dockerfile ./ 
 ```
 
 package.json
 ```json
 {
     "scripts": {
-      "docker:build": "bear-node-docker build --dockerfile=./Dockerfile"
+      "docker:build": "acrool-node-docker-cli build --dockerfile=./Dockerfile"
     }
 }
 ```
@@ -87,7 +87,7 @@ package.json
 ```json
 {
   "scripts": {
-    "docker:build": "bear-node-docker build --publicUrl=/recommend  --dockerfile=./Dockerfile"
+    "docker:build": "acrool-node-docker-cli build --publicUrl=/recommend  --dockerfile=./Dockerfile"
   }
 }
 ```
@@ -116,7 +116,7 @@ package.json
 {
   "scripts": {
       "build": "react-scripts build",
-      "docker:build": "yarn build && bear-node-docker build --publicUrl=/recommend  --dockerfile=./Dockerfile"
+      "docker:build": "yarn build && acrool-node-docker-cli build --publicUrl=/recommend  --dockerfile=./Dockerfile"
   }
 }
 ```
