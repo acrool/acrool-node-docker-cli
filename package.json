@@ -1,6 +1,6 @@
 {
   "name": "@acrool/node-docker-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pull acrool icon symbols to project cli",
   "keywords": [
     "typescript",
